@@ -1,16 +1,19 @@
 import PropTypes from 'prop-types';
-//import styles from './statistics.module.css';
+import css from './statistics.module.css';
+
+//Цвет фона элемента статистики в оформлении можно пропустить,
+//либо создать функцию для генерации случайного цвета.
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section class="statistics">
-      {title && <h2 class="title">{title}</h2>}
+    <section className={css.statistics}>
+      {title && <h2 className={css.title}>{title}</h2>}
 
-      <ul class="stat-list">
+      <ul className={css.stat_list}>
         {stats.map(stat => (
-          <li class="item" key={stat.id}>
-            <span class="label">{stat.label}</span>
-            <span class="percentage">{stat.percentage}</span>
+          <li className={css.item} key={stat.id}>
+            <span className={css.label}>{stat.label}</span>
+            <span className={css.percentage}>{stat.percentage}</span>
           </li>
         ))}
       </ul>

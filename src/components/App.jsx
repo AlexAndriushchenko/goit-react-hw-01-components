@@ -20,7 +20,7 @@ export default function App() {
      stats={user.stats}
     />
     <Statistics title="Upload stats" stats={data} />
-    {/* <Statistics stats={data} /> */}
+    <Statistics stats={data} />
     <FriendList friends={friends} />
     <TransactionHistory items={transactions} />
   </div>
