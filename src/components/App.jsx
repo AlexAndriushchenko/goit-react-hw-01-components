@@ -10,7 +10,24 @@ import friends from './FriendList/friends.json';
 import TransactionHistory from './TransactionHistory/TransactionsTable';
 import transactions from './TransactionHistory/transactions.json';
 
-export default function App() {
+// export default function App() {
+//   return(<div>
+//     <Profile
+//      username={user.username}
+//      tag={user.tag}
+//      location={user.location}
+//      avatar={user.avatar}
+//      stats={user.stats}
+//     />
+//     <Statistics title="Upload stats" stats={data} />
+//     <Statistics stats={data} />
+//     <FriendList friends={friends} />
+//     <TransactionHistory items={transactions} />
+//   </div>
+//   );
+// }
+
+export const App = () => {
   return(<div>
     <Profile
      username={user.username}
@@ -26,3 +43,4 @@ export default function App() {
   </div>
   );
 }
+
